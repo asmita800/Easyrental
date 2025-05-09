@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Easy RentAL</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<!-- Header -->
-<header class="header">
-  <div class="container header-content">
-    <div class="logo">Easy RentAL</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Easy RentAL</div>
+      <nav class="nav">
+      <a href="#">HOME</a>
+        <a href="#">BIKES FOR RENT</a>
+        <a href="#">OUR SERVICES</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">FAQS</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Hero Section -->
 <section class="hero">
   <div class="container hero-content">
     <div class="hero-text">
@@ -33,112 +36,76 @@
       </div>
     </div>
     <div class="hero-images">
-      <img src="https://via.placeholder.com/150" alt="Bike 1">
-      <img src="https://via.placeholder.com/150" alt="Bike 2">
-      <img src="https://via.placeholder.com/150" alt="Bike 3">
+      <img src="{{asset('storage/frontend_images/Bike 1.jpg')}}" alt="Bike 1">
+      <img src= alt="Bike 2">
+      <img src= alt="Bike 3">
     </div>
   </div>
 </section>
 
-<!-- Bikes Section -->
 <section class="section">
   <div class="container">
     <h2>Get Your <span class="highlight">Bike</span> For Rent</h2>
     <div class="card-grid">
       <div class="card">
         <img src="{{asset('storage/frontend_images/cool-motorcycle-outdoors.jpg')}}" alt="Bike 1">
-        <h3>Royal Enfield</h3>
-        <p>$120/day</p>
+        <h3>YAMAHA <span class="highlight">MT 15 V2</span> </h3>
+        <p>Start prices from Rs1500 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Bike 2">
-        <h3>Sport Bike</h3>
-        <p>$100/day</p>
+        <img src= alt="Bike 2">
+        <h3>KTM <span class="highlight">200 DUKE</span></h3>
+        <p>Start prices from Rs2000 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Bike 3">
-        <h3>Harley Davidson</h3>
-        <p>$200/day</p>
+        <img src="" alt="Bike 3">
+        <h3>ROYAL ENFIELD <span class="highlight">HUNTER 350</span></h3>
+        <p>Start prices from Rs2500 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Bike 4">
-        <h3>Vintage Bike</h3>
-        <p>$90/day</p>
+        <img src="" alt="Bike 4">
+        <h3>HONDA <span class="highlight">SP 125</span></h3>
+        <p>Start prices from Rs1000 per day</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Scooters Section -->
 <section class="section">
   <div class="container">
     <h2>Get Your <span class="highlight">Scooter</span> For Rent</h2>
     <div class="card-grid">
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Scooter 1">
-        <h3>Honda Dio</h3>
-        <p>$40/day</p>
+        <img src="" alt="Scooter 1">
+        <h3>HONDA <span class="highlight">DIO 125</span></h3>
+        <p>Start prices from Rs1000 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Scooter 2">
-        <h3>TVS Jupiter</h3>
-        <p>$35/day</p>
+        <img src="" alt="Scooter 2">
+        <h3>TVS <span class="highlight">JUPITER 125</span></h3>
+        <p>Start prices from Rs1000 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Scooter 3">
-        <h3>Yamaha Fascino</h3>
-        <p>$45/day</p>
+        <img src="" alt="Scooter 3">
+        <h3>APRILLA<span class="highlight">SR 160</span></h3>
+        <p>Start prices from Rs1500 per day</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Scooter 4">
-        <h3>Honda Activa</h3>
-        <p>$50/day</p>
+        <img src="" alt="Scooter 4">
+        <h3>HONDA <span class="highlight">ACTIVA</span></h3>
+        <p>Start prices from Rs1000 per day</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Industry Section -->
-<section class="section">
-  <div class="container">
-    <h2>What We Are In <span class="highlight">Rental Industry</span></h2>
-    <div class="industry-tabs">
-      <button class="tab active">Bikes</button>
-      <button class="tab">Scooters</button>
-      <button class="tab">Accessories</button>
-    </div>
-    <div class="card-grid">
-      <!-- More rental cards here -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Item 1">
-        <h3>Royal Enfield</h3>
-        <p>$120/day</p>
-      </div>
-      <!-- (repeat as needed) -->
-    </div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container footer-content">
-    <div>
-      <p>Contact: rental@easyrental.com</p>
-      <p>Phone: +1 234 567 890</p>
-      <p>Address: 123 Street, City, Country</p>
-    </div>
-    <div class="social-icons">
-      <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
-      <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
-    </div>
-  </div>
-  <p class="copy">&copy; 2025 Easy RentAL. All rights reserved.</p>
-</footer>
+@include('footer');
 
 </body>
 </html>
 <style>
-    /* Reset */
+ 
 * {
   margin: 0;
   padding: 0;
@@ -146,22 +113,15 @@
 }
 
 body {
-  font-family: 'Poppins', 'poppins';
+  font-family: 'Poppins', 'Poppins';
   background: #fff;
   color: #333;
 }
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Header */
 .header {
-  background: #fff;
+  background: #fffafa;
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font:bold;
 }
 
 .header-content {
@@ -173,20 +133,32 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #0056b3;
+  color: #025CA3;
 }
 .nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .nav a:hover {
-  color: #007bff;
+  color: #025CA3;
 }
 
-/* Hero Section */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
 .hero {
   background: #f8f9fa;
   padding: 80px 0;
@@ -226,22 +198,24 @@ body {
 }
 
 .primary {
-  background: #007bff;
+  background: #025CA3;
   color: #fff;
 }
 
 .secondary {
   background: #fff;
-  color: #007bff;
-  border: 2px solid #007bff;
+  color: #025CA3;
+  border: 2px solid #025CA3;
 }
 
 .hero-images img {
+
   width: 100px;
+  Height: 100px;
   margin-left: 10px;
 }
 
-/* Sections */
+
 .section {
   padding: 60px 0;
 }
@@ -253,10 +227,10 @@ body {
 }
 
 .highlight {
-  color: #007bff;
+  color: #025CA3;
 }
 
-/* Cards */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -284,11 +258,12 @@ body {
 }
 
 .card p {
-  color: #28a745;
+  font-family:'Poppins';
+  color: #000000;
   font-weight: bold;
 }
 
-/* Tabs */
+
 .industry-tabs {
   text-align: center;
   margin-bottom: 30px;
@@ -296,8 +271,8 @@ body {
 
 .tab {
   background: #fff;
-  border: 2px solid #007bff;
-  color: #007bff;
+  border: 2px solid #025CA3;
+  color: #025CA3;
   padding: 8px 20px;
   margin: 0 10px;
   border-radius: 30px;
@@ -305,32 +280,11 @@ body {
 }
 
 .tab.active, .tab:hover {
-  background: #007bff;
+  background: #025CA3;
   color: #fff;
 }
 
-/* Footer */
-.footer {
-  background: #0056b3;
-  color: #fff;
-  padding: 30px 0;
-  margin-top: 50px;
-}
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-.social-icons img {
-  width: 24px;
-  margin-left: 15px;
-}
+</style>
 
-.copy {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
-}

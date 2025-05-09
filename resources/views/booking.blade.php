@@ -6,23 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Easy RentAL</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
 
-  <header>
-    <div class="logo">Easy RentAL</div>
-    <nav>
-      <a href="#">HOME</a>
-      <a href="#">BIKES FOR RENT</a>
-      <a href="#">OUR SERVICES</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">FAQS</a>
-    </nav>
-    <div class="auth-buttons">
-      <button>Log In</button>
-      <button class="register">Register</button>
-    </div>
-  </header>
+  
+ @include('header');
+
 
   <main>
     <section class="booking">
@@ -62,20 +55,7 @@
     </section>
   </main>
 
-  <footer class="footer">
-  <div class="container footer-content">
-    <div>
-      <p>Contact: rental@easyrental.com</p>
-      <p>Phone: +1 234 567 890</p>
-      <p>Address: 123 Street, City, Country</p>
-    </div>
-    <div class="social-icons">
-      <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
-      <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
-    </div>
-  </div>
-  <p class="copy">&copy; 2025 Easy RentAL. All rights reserved.</p>
-</footer>
+  @include('footer');
 
 </body>
 </html>
@@ -88,29 +68,13 @@
 }
 
 body {
+
+ font-family: 'Poppins', 'Poppins';
+ font-family: "Roboto", sans-serif;
   background: #fff;
-  color: #000;
+  color: #333;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  border-bottom: 1px solid #ccc;
-}
-
-.logo {
-  font-weight: bold;
-  color: #007bff;
-  font-size: 1.5em;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #000;
-}
 
 .auth-buttons button {
   margin-left: 10px;
@@ -151,7 +115,7 @@ form input, form select {
 }
 
 .book-btn {
-  background: #007bff;
+  background: #025CA3;
   color: white;
   padding: 10px;
   border: none;
@@ -159,7 +123,7 @@ form input, form select {
 }
 
 .info-section h2 {
-  color: #007bff;
+  color: #025CA3;
   margin-bottom: 10px;
 }
 
@@ -167,32 +131,6 @@ form input, form select {
   margin-left: 20px;
   list-style: disc;
 }
-
-.footer {
-  background: #007bff;
-  color: #fff;
-  padding: 30px 0;
-  margin-top: 50px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.social-icons img {
-  width: 24px;
-  margin-left: 15px;
-}
-
-.copy {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
-}
-
 
 </style>
 

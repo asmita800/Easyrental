@@ -9,27 +9,8 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container nav-bar">
-      <h1 class="logo">Easy RentAL</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Bikes for Rent</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#" class="active">FAQs</a></li>
-        </ul>
-      </nav>
-      <div class="nav-buttons">
-        <button class="btn-outline">Log In</button>
-        <button class="btn-fill">Register</button>
-      </div>
-    </div>
-  </header>
+  @include('header');
 
-  <!-- FAQ Section -->
   <section class="faq">
     <div class="container">
       <h2>Frequently Asked Questions (FAQs) <span>About Bike Rental</span></h2>
@@ -94,22 +75,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-left">
-        <h2>Easy RentAL</h2>
-        <p>Bharatpur 5, Chitwan</p>
-        <p>9812345676<br>9826734623</p>
-        <p>info@bikerentalsystem.com<br>bikerental.com@gmail.com</p>
-        <p><a href="https://www.bikerentalsystem.com">https://www.bikerentalsystem.com</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
+  @include('footer');
 
 </body>
 </html>
@@ -128,57 +94,7 @@
   margin: auto;
 }
 
-/* Header */
-header {
-  background: #fff;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
-}
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: #0072ce;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-
-.nav-links .active {
-  border-bottom: 2px solid #0072ce;
-}
-
-.nav-buttons .btn-outline,
-.nav-buttons .btn-fill {
-  padding: 0.4rem 1rem;
-  margin-left: 0.5rem;
-  border: 1px solid #0072ce;
-  background: transparent;
-  color: #0072ce;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-fill {
-  background-color: #0072ce;
-  color: #fff;
-}
-
-/* FAQ */
 .faq {
   padding: 3rem 0;
 }
@@ -191,7 +107,7 @@ header {
 }
 
 .faq h2 span {
-  color: #0072ce;
+  color: #025CA3;
 }
 
 .faq h3, .faq h4 {
@@ -215,32 +131,6 @@ header {
   color: #444;
 }
 
-/* Footer */
-footer {
-  background: #0058a3;
-  color: #fff;
-  padding: 2rem 0;
-  margin-top: 3rem;
-}
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.footer-left p, .footer-left a {
-  margin: 0.4rem 0;
-  color: #fff;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.footer-right a {
-  font-size: 1.8rem;
-  color: #fff;
-  margin-right: 1rem;
-}
 
 </style>
